@@ -5,10 +5,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+.background-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
 body {
     background-image: url(../images/bebebe.jpg);
     background-size: cover;
-    color: azure;
+    color: rgb(255, 251, 251);
     font-family: "Oswald", sans-serif;
 }
 .container {
@@ -18,7 +29,10 @@ body {
     padding: 0 15px;
 
 }
-
+h1{
+    display: flex;
+    align-items: center;
+}
 .map {
     position: relative;
     width: 100%;
@@ -31,11 +45,11 @@ body {
     content: "";
     position: absolute;
     display: block;
-    width: 5px;
+    width: 10px;
     height: 100%;
     top: 0;
     left: 50%;
-    background: whitesmoke;
+    background: rgb(32, 172, 4);
 }
 
 .branch__block {
@@ -60,11 +74,11 @@ body {
     content: "";
     position: absolute;
     display: block;
-    height: 5px;
+    height: 10px;
     width: 100%;
     top: 50%;
     left: 0;
-    background: azure;
+    background: rgb(32, 172, 4);
     z-index: -1;
 }
 
@@ -84,6 +98,11 @@ body {
     border-color: green;
 }
 
+
+.branch__block:has(.branch__btn:checked) label {
+    color: green;
+}
+
 @media(max-width:740px) {
     .branch::after {
         background: transparent;
@@ -95,4 +114,22 @@ body {
         margin-left: auto;
     }
 
+}
+
+a{
+    color: black;
+
+}
+h2{
+    color: black;
+}
+p{
+    color: black;
+}
+
+label{
+    color: red;
+}
+p2{
+    color: white;
 }
