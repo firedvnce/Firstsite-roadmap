@@ -19,7 +19,7 @@
 body {
     background-image: url(../images/bebebe.jpg);
     background-size: cover;
-    color: rgb(255, 251, 251);
+    color: black;
     font-family: "Oswald", sans-serif;
 }
 .container {
@@ -31,7 +31,9 @@ body {
 }
 h1{
     display: flex;
-    align-items: center;
+    align-items:center;
+    text-align: center;
+    display: block;
 }
 .map {
     position: relative;
@@ -49,7 +51,9 @@ h1{
     height: 100%;
     top: 0;
     left: 50%;
-    background: rgb(32, 172, 4);
+    background: whitesmoke;
+    border-radius: 40px;
+    padding: 10px;
 }
 
 .branch__block {
@@ -58,7 +62,7 @@ h1{
     min-height: 150px;
     border-radius: 10px;
     padding: 20px;
-    border: 2px solid gray;
+    border: 3px solid gray;
     background: lightgrey;
 }
 
@@ -78,7 +82,7 @@ h1{
     width: 100%;
     top: 50%;
     left: 0;
-    background: rgb(32, 172, 4);
+    background: whitesmoke;
     z-index: -1;
 }
 
@@ -131,5 +135,6 @@ label{
     color: red;
 }
 p2{
-    color: white;
+    text-align: center;
+    display: block;
 }
